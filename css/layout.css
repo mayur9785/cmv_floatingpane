@@ -1,0 +1,380 @@
+html, body 
+{ 
+    height: 100%; width: 100%; margin: 0; padding: 0; 
+} 
+body
+{
+    background-color:white; overflow:hidden; font-family: "Trebuchet MS"; 
+    
+}
+.claro *
+{
+    outline: none;
+}
+#header 
+{
+    /*padding-top:5px;
+    padding-left:10px;*/
+    /*padding: 0.1em;*/
+    padding-top:20px;
+    background-color:#82395f; 
+    color:white; font-size:18pt;
+    text-align:center; 
+    font-weight:bold;
+    height:40px;
+    clear:left;
+
+}
+header label
+{
+    float:right;
+    font-size:small;
+}
+.roundedCorners
+{
+    -moz-border-radius: 4px;
+}
+.shadow
+{
+    /*slight shadow effect added for browsers that support this functionality*/
+    -o-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    box-shadow: 4px 4px 8px #adadad;
+    -webkit-box-shadow: 4px 4px 8px #adadad;
+    -moz-box-shadow: 4px 4px 8px #adadad;
+    -o-box-shadow: 4px 4px 8px #adadad;
+}
+#subheader 
+{
+    font-size:small;
+    padding-left: 40px;
+    color: peru;
+}
+#rightPane
+{
+    background-color:white;
+    color:peru;
+    margin:5px;
+    border: solid 2px cornflowerblue;
+}
+#map 
+{
+    background-color:white;
+    margin-top:35px;
+}
+#map .toolbarButton
+{
+	top:4px;
+	z-index:42;
+}
+#footer
+{
+    background-color:#82395f;
+    color:white;font-size:10pt; 
+    text-align:center; height:20px;
+    clear:left;
+    padding-top:5px;
+}
+#footer a
+{
+    color:white;
+    text-decoration:none;
+}
+.claro .dijitContentPane 
+{
+    padding:0;
+}
+#navMenu
+{
+    height:35px;
+    top:60px;
+    z-index:100;
+    width:99.9%;
+    position:absolute;
+    background-color:#f2f2f2;
+    float:left;
+}
+.navItemName
+{
+    padding:7px 35px;
+}
+#menuName
+{
+    display:none;
+}
+
+#toolbarIcon
+{
+    /*margin-top: 61px*/
+    top: 66px;float:right;position:absolute;right:10px;z-index:100;
+}
+/*.fa-search-plus:hover, .fa-search-minus:hover,.fa-globe:hover, .fa-arrow-left:hover,.fa-arrow-right:hover,.fa-hand-o-up:hover,.fa-times-circle:hover,
+.fa-info-circle:hover,.fa-pencil-square:hover
+{
+    cursor:pointer;
+    background-color:#A4A4A4;
+    color:white;
+    border:solid 3px #A4A4A4;
+}*/
+.fa 
+{
+    /*background:none;
+    border:none;*/
+}
+.fa:hover
+{
+    color:#7D1935;
+    cursor:pointer;
+    /*background:#82395f;
+    color:white;
+    border:solid 1px #82395f;*/
+}
+.fa-lg
+{
+    border:none;
+    background:none;
+    line-height:none;
+}
+.fa-2x
+{
+    border:none;
+    background:none;
+    color:#B22222;
+}
+.claro .dijitMenuBar .dijitMenuItemHover 
+{
+    /*top,right,bottom,left sequence*/
+    padding: 3px 9px 3px;
+}
+/* Show/Hode Matrix button Div*/
+.myButton 
+{
+    /*padding: .2em 1em;*/
+    padding:0;
+    margin:0;
+    font-size: 1em;
+    position:fixed;
+    z-index:100;
+    top:50%;
+    vertical-align:top;
+    background-color:#82395f;
+    color:white;
+    /*margin:23px 0px 0px 0px;*/
+    width:110px;height:30px;
+    transform:rotate(-90deg);
+    left:-39px;
+    cursor:pointer;
+    border:none;
+}.myButton:hover
+ {
+     background-color: #555555;
+     color:white;
+ }
+/* Filter the Request ID Div */
+#filterDiv
+{
+    border:solid 1px black;
+    position:absolute;
+    z-index:100;
+    display:none;
+    top:95px;
+    left:32px;
+    width:45%;
+    background-color:#454545;
+    opacity: 0.9;
+    
+}
+/* Resource Alocation Matrix Div */
+#matrixDiv
+{
+    border:solid 1px black;
+    position:absolute;
+    display:none;
+    z-index:100;
+    bottom:27px;
+    left:32px;
+    width:97%;
+    height:400px;
+    background-color:#454545;
+    opacity: 0.9;
+}
+#matrixDiv h1
+{
+    font-size:smaller;
+    left:10px;
+    color:white;
+    opacity:1;
+    background-color:black;
+    height:20px;
+    padding:0;
+    margin:0;
+}
+/* Menubar Item styles*/
+nav a:hover {
+    background-color: #A4A4A4;
+    color:white;
+    cursor: pointer;
+}
+nav a
+{
+    padding: 8px 10px;
+    color:black;
+    text-decoration: none;
+    font-size:10pt;
+    /*background-color:#e5e5e5;*/
+}
+nav a.active {
+    color: white;
+    background-color: black;
+
+}
+.activemenu
+{
+    background:#A4A4A4;
+    color:white;
+    /*font-size:11pt;*/
+    /* The Arrow */
+    /*font-family:"FontAwesome";
+    white-space:pre; 
+    content:"\A\f0d8"; 
+    font-size:10pt;
+    vertical-align:top;
+    line-height:0.30em;
+    color:transparent;*/
+    
+}
+
+/* Zoom Slider*/
+/*.claro .esriSimpleSliderTL {
+    top: 20px;
+    right: 20px;
+    text-align:right;
+}*/
+.claro .dijitMenuItem {
+    color: #000000;
+    margin-top: 10px;
+    font-size:10pt;
+}
+#mapCenter {
+    padding: 0;
+    overflow: hidden;
+    background-color:white;
+    /*background: url("../images/noisy_grid.png") #fff;*/
+}
+
+/* Map Home Button */
+#HomeButton 
+{
+    position: absolute;
+    top: 95px;
+    left: 20px;
+    z-index: 100;
+}
+/* Display Coordinates */
+#info
+{
+   position:absolute; 
+   margin:0 auto 0 auto;
+   left:0;
+   right:0;
+   width:300px;
+   height:0;
+   bottom:25px; 
+   color:#404040; 
+   z-index:50;
+   /*text-shadow: 1px 1px white;*/
+   text-shadow:4px 4px 2px rgba(150, 150, 150, 1);
+   font-weight:bold;
+}
+/*.HomeButton .home {
+    background-color: rgba(134, 34, 34, 0.8);
+}*/
+#toolMeasurement
+{
+    /*top: 100px;
+    position:absolute;
+    right:10px;
+    z-index:200;
+    border:solid 1px red;*/
+    visibility:hidden;
+}
+#toolbarWidgetDiv
+{
+    position: absolute;
+	right:250px;
+	top:62px;
+    /*width:100px;
+    height:30px;*/
+	z-index:200;
+}
+/*floating widget styles (start)*/
+.dojoxFloatingPaneCanvas{
+	background-color:transparent;
+}
+
+.dojoxFloatingPaneTitle{
+	font-family: 'Englebert', cursive;
+	border: solid 0px #999;
+    color:white;
+    cursor:move;
+}
+.floatingPane{
+   	overflow:hidden; 	
+   	border: solid 1px #999;
+  	/*border-radius:10px;
+  	-moz-border-radius:10px;
+  	-webkit-border-radius: 10px;*/ 
+  	padding:0px !important;
+  	box-shadow: 2px 2px 2px #888888;
+}
+
+.closeBtn {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+}
+
+.minimizeBtn {
+    position: absolute;
+    right: 30px;
+    top: 4px;
+}
+.maximizeBtn {
+    position: absolute;
+    right: 30px;
+    top: 4px;
+}
+.floatingPaneIcon {
+    position: absolute;
+    left: 5px;
+    top: 3px;
+    width:16px;
+    height:16px;
+    /*background-image: url("../images/searchicon.png");*/
+    background-repeat: no-repeat;
+}
+.paneTitleText {
+    position: relative;
+    left: 25px;
+    top: 0px;
+}
+/*floating widget styles (end)*/
+/*.dojoxFloatingPaneTitle{
+	background-color:black;
+}
+.dojoxFloatingPane {
+	background-color:black;
+}
+.claro .dijitContentPane {
+    background-color:#f2f2f2;
+}
+.claro .dojoxFloatingPaneTitle {
+    background-color: #82395f;
+    color:white;
+    padding:5px;
+}*/
+/*.claro .dijitButton
+{
+    background:pink;
+}*/
