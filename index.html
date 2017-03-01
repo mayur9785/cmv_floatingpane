@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no" />
+    <title>Map Viewer</title>
+    <link rel="stylesheet" href="https://js.arcgis.com/3.19/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/3.19/esri/css/esri.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/theme/dbootstrap/dbootstrap.css">-->
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!--<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>-->
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>-->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.0/i18n/jquery-ui-i18n.min.js"></script>-->
+    <script>var dojoConfig = { parseOnLoad: true };</script>
+    <script type="text/javascript">
+        var package_path = window.location.pathname.substring(0, window.location.pathname.lastIndexOf('/'));
+        var dojoConfig = {
+            async: true,
+            packages: [
+            {
+                name: "application",
+                location: package_path + '/js'
+            },
+            {
+                name: 'viewer',
+                location: location.pathname.replace(/[^\/]+$/, '') + 'js/viewer'
+            }, {
+                name: 'config',
+                location: location.pathname.replace(/[^\/]+$/, '') + 'js/config'
+            },
+            {
+                name: 'gis',
+                location: location.pathname.replace(/[^\/]+$/, '') + 'js/gis'
+            }],
+        };
+    </script>
+</head>
+<body class="claro">
+    <div id="mainWindow"
+         data-dojo-type="dijit.layout.BorderContainer"
+         data-dojo-props="design:'headline', gutters:false"
+         style="width:100%; height:100%;">
+        <!-- Header -->
+        <div id="header" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'top'">
+            <span>this is the header section</span><br />
+            <!--<span id="subheader" class="roundedCorners">sub header</span>-->
+        </div>
+        
+        <!-- Map Area -->
+        <div id="map"
+                data-dojo-type="dijit/layout/ContentPane"
+                data-dojo-props="region:'center'">
+            <div id="HomeButton"></div>
+            <span id="info"></span>
+        </div>
+
+        <!-- Footer -->
+        <div id="footer" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'bottom'">
+            Copyright &copy; 2017 <a href="#" target="_blank"></a>
+        </div>
+
+        <!-- Toggle Button -->
+        <button id="button" class="myButton">Show/Hide
+        </button>
+
+        <div id="navMenu">
+            <nav class="navItemName" id="menuName">
+                <a href="#" class="activemenu">All</a>
+                <a href="#">Open</a>
+                <a href="#">In Res</a>
+                <a href="#">Res Comp</a>
+                <a href="#">In Survey</a>
+                <a href="#">Survey Comp</a>
+                <a href="#">In Process</a>
+                <a href="#">Process Comp</a>
+                <a href="#">Cancel</a>
+            </nav>
+        </div>
+
+        <!-- Request Menu Filter Div-->
+        <div id="filterDiv">
+            <!--<div style="float:right;top:5%;position:relative;height:20px;width:30px;border:solid 1px red;"></div>-->
+            <img id="imgFilter" src="images/Filter.png" />
+        </div>
+
+        <!-- Resource Allocation Matrix -->
+        <div id="matrixDiv">
+            <h1>RESOURCE ALLOCATION MATRIX</h1>
+            <img id="imgRAM" src="images/RAM.png" />
+        </div>
+
+        <!-- Label for Login details -->
+        <label id="lblLoginName" style="right:10px;font-size:10pt;z-index:100;position:absolute;padding:10px 10px;color:white;">Welcome, Dodiya Mayurkumar</label>
+        <label style="right:10px;font-size:10pt;z-index:100;position:absolute;padding:30px 10px;color:white;">Information System Department</label>
+        <img src="images/1.png" style="position: absolute; z-index:100;height:50px;width:80px;top:5px;left:5px;" />
+    </div>
+
+    <!-- Standard Toolbar Icons -->
+    <div id="toolbarIcon">
+    </div>
+    <!-- Toolbar Widget Div -->
+    <div id="toolbarWidgetDiv"></div> 
+
+    <script src="https://js.arcgis.com/3.19/"></script>
+    <script type="text/javascript">
+        // get the config file from the url if present
+        var file = 'config/viewer', s = window.location.search, q = s.match(/config=([^&]*)/i);
+        if (q && q.length > 0) {
+            file = q[1];
+            if (file.indexOf('/') < 0) {
+                file = 'config/' + file;
+            }
+        }
+        require(['viewer/Controller', file], function (Controller, config) {
+            Controller.startup(config);
+        });
+    </script>
+    <script src="js/main.js"></script>
+</body>
+</html>
