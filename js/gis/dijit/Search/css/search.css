@@ -1,0 +1,78 @@
+.widget_Search .toolbarButton {
+    -moz-user-select: none;
+    background-color:rgba(0,0,0,0.0);
+    /*border: 1px solid #666666;*/
+    -moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright:3px;
+	-moz-border-radius-bottomleft:3px;
+	-moz-border-radius-bottomright:3px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-top-right-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-webkit-border-bottom-right-radius:3px;
+	border-top-left-radius:3px;
+	border-top-right-radius:3px;
+	border-bottom-left-radius:3px;
+	border-bottom-right-radius:3px;
+    cursor: pointer;
+    padding: 0px; 
+    width: 29.5px;
+    height: 30px;
+}
+
+.widget_Search .toolbarButtonIcon {
+	width: 29.5px;
+    height: 30px;
+    padding: 0px;
+    /*background-color:rgba(0,0,0,0.0);*/
+    border:none;
+
+}
+
+.widget_Search .toolbarButtonIcon.blue, .widget_Search .toolbarButtonIcon.black, .widget_Search .toolbarButtonIcon.green {  
+    background: url(../images/search_dark.png) no-repeat center center; 
+
+    /*font-family: FontAwesome;
+    content:"\f002"; 
+    font-size:20pt;*/
+     /*background: url(../images/search_light.png) no-repeat center center;*/
+}
+.widget_Search .toolbarButtonIcon.white {
+    background: url(../images/search_light.png) no-repeat center center;
+
+     /*background: url(../images/search_dark.png) no-repeat center center;*/ 
+}
+.widget_Search .toolbarButton .dijitButtonNode {
+    border: none;
+    background-color: rgba(0,0,0,0.0);
+    padding: 0px;   
+}
+.widget_Search .floatingPaneIcon.black:before, .widget_Search .floatingPaneIcon.blue, .widget_Search .floatingPaneIcon.green{
+  /*background-image: url(../images/search_light.png);*/
+  
+    font-family: FontAwesome;
+    content:"\f002"; 
+    font-size:10pt;
+    color:white;
+}
+
+.widget_Search .floatingPaneIcon.white {
+  /*background-image: url(../images/search_dark.png);*/
+}
+.widget_Search .hidden{
+	display:none;
+}
+.widget_Search_ui 
+{
+  font-family: 'Open Sans', Verdana, Geneva, sans-serif;
+  font-size: 15px;
+  padding:40px;
+  vertical-align:middle;
+  color:white;
+}
+
+.widget_Search_ui .valueList{
+	display:inline-block; 
+	color:black;
+    background-color:#FFFFFF;  
+}

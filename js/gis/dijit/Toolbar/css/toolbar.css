@@ -1,0 +1,200 @@
+
+/*#mapDiv #toolbarWidgetContainer
+{
+	position: absolute;
+	right:0px;
+	top:0px;
+	z-index:42;
+}*/
+
+/* vertical scroll (start)
+.widgets_Toolbar #mask {
+	overflow:hidden;
+	height:97px;
+	margin-top: 5px; 
+	margin-bottom: 5px;
+}
+
+.widgets_Toolbar ul {
+	margin:0;
+	padding:0;
+	margin-top: 0px;
+	padding-top:0px;
+	position:relative;
+	overflow-x: hidden;
+ 	overflow-y: hidden;
+  	list-style: none;
+  	-moz-animation: cssAnimationUp 1s  1 linear forwards;
+  	-webkit-animation:cssAnimationUp 1s  1 linear forwards;
+	-o-animation:cssAnimationUp 1s  1 linear forwards;
+}
+.widgets_Toolbar li {
+	
+	display:block;
+	padding-bottom:3px;
+	list-style:none;
+	
+}
+ vertical scroll (end)*/
+
+
+/* horizontal scroll (start)*/
+.widgets_Toolbar
+{
+	width: auto;
+	white-space: nowrap;
+	float:right;
+	display:inline-block;
+	vertical-align:middle;
+	line-height: 20px;
+    z-index:200;
+}
+
+.widgets_Toolbar #mask {
+	overflow:hidden;
+	width:75px;
+	height:35px;
+	margin-top: 4px; 
+	margin-bottom: 4px;
+}
+
+.widgets_Toolbar ul {
+	margin:0;
+	padding:0;
+	margin-top: 0px;
+	padding-top:0px;
+	position:relative;
+	overflow-x: hidden;
+ 	overflow-y: hidden;
+  	list-style: none;
+  	white-space: nowrap;
+  	/*-moz-animation: cssAnimationUp 1s  1 linear forwards;
+  	-webkit-animation:cssAnimationUp 1s  1 linear forwards;
+	-o-animation:cssAnimationUp 1s  1 linear forwards;
+	animation:cssAnimationUp 1s  1 linear forwards;*/
+}
+.widgets_Toolbar li {
+	
+	display:inline-block;
+	padding-right:2px;
+	list-style:none;
+	
+}
+/*horizontal scroll (end)*/
+
+.widgets_Toolbar .extentButton, .widgets_Toolbar .slideUpButton, .widgets_Toolbar .slideDownButton  {
+    -moz-user-select: none;
+    background-color:rgba(0,0,0,0.0);
+    border: 0px solid #666666;
+    -moz-border-radius-topleft: 7px;
+	-moz-border-radius-topright:7px;
+	-moz-border-radius-bottomleft:7px;
+	-moz-border-radius-bottomright:7px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-top-right-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-webkit-border-bottom-right-radius:3px;
+	border-top-left-radius:3px;
+	border-top-right-radius:3px;
+	border-bottom-left-radius:3px;
+	border-bottom-right-radius:3px;
+    cursor: pointer;
+    padding: 0px; 
+    
+}
+
+
+/*@-webkit-keyframes cssAnimationUp 
+{
+	0%   { top: -45px; } 
+  	100% { top: -4px; }
+}
+@-moz-keyframes cssAnimationUp 
+{
+	0%   { top: -40px} 
+  	100% { top: 0px; }
+} */
+
+/*@-o-keyframes cssAnimationUp 
+{
+	0%   { top: -45px; } 
+  	100% { top: 0px; }
+}*/
+
+
+/*@-webkit-keyframes cssAnimationDown 
+{
+	0%   { top: 0px; } 
+  	100% { top: -45px; }
+}
+@-moz-keyframes cssAnimationDown
+{
+	 0%   { top: 0px; } 
+  	 100% { top: -40px }	
+} 
+@-o-keyframes cssAnimationDown 
+{
+	0%   { top: 0px; } 
+  	100% { top: -45px; }
+}
+
+*/
+
+
+
+	
+.widgets_Toolbar .upIcon.white {
+    
+    background: url(../images/up_dark.png) no-repeat center center;
+    width: 16px;
+    height: 10px;
+    padding: 0px;
+}
+
+.widgets_Toolbar .downIcon.white {
+    
+    background: url(../images/down_dark.png) no-repeat center center;
+    width: 16px;
+    height: 10px;
+    padding: 0px;
+}
+
+.widgets_Toolbar .upIcon.black, .widgets_Toolbar .upIcon.blue, .widgets_Toolbar .upIcon.green {
+    
+    background: url(../images/up_light.png) no-repeat center center;
+    width: 16px;
+    height: 10px;
+    padding: 0px;
+}
+
+.widgets_Toolbar .downIcon.black, .widgets_Toolbar .downIcon.green, .widgets_Toolbar .downIcon.blue {
+    
+    background: url(../images/down_light.png) no-repeat center center;
+    width: 16px;
+    height: 10px;
+    padding: 0px;
+}
+
+.widgets_Toolbar .slideRightButton .dijitButtonNode, .widgets_Toolbar .slideLeftButton .dijitButtonNode {
+    vertical-align:middle;line-height: 35px;
+    border: none;
+    background-color: rgba(0,0,0,0.0);
+    padding-right: 12px;  
+    background-image: none;
+    margin:0px;
+    box-shadow: none;
+    transform:rotate(270deg);
+	-ms-transform:rotate(270deg); /* IE 9 */
+	-webkit-transform:rotate(270deg); /* Opera, Chrome, and Safari */
+}
+.widgets_Toolbar .slideLeftButton
+{
+	padding-right: 3px;
+}
+.widgets_Toolbar .scrollButton {
+	float:left;
+	display:inline-block;
+}
+.widgets_Toolbar .scrollButton.hidden{
+	display:none;
+}

@@ -1,0 +1,65 @@
+.gis_NavToolsDijit {
+	height: 25px;
+    position:absolute;
+    z-index:200;
+    right:10px;
+    top:66px;
+    float:right;
+}
+.fa-search-plus:hover, .fa-search-minus:hover,.fa-globe:hover, .fa-arrow-left:hover,.fa-arrow-right:hover,.fa-hand-o-up:hover,.fa-times-circle:hover
+{
+    color:#7D1935;
+    cursor:pointer;
+}
+
+.gis_NavToolsDijit .zoominIcon {
+    background-image: url(../images/nav_zoomin.png);
+    width: 16px;
+    height: 16px;
+}
+
+ .gis_NavToolsDijit .zoomoutIcon {
+	background-image: url(../images/nav_zoomout.png);
+	width: 16px;
+	height: 16px;
+}
+
+.gis_NavToolsDijit .zoomfullextIcon {
+	background-image: url(../images/nav_fullextent.png);
+	width: 16px;
+	height: 16px;
+}
+
+.gis_NavToolsDijit .zoomprevIcon {
+	background-image: url(../images/nav_previous.png);
+	width: 16px;
+	height: 16px;
+}
+
+ .gis_NavToolsDijit .zoomnextIcon {
+	background-image: url(../images/nav_next.png);
+	width: 16px;
+	height: 16px;
+}
+
+.gis_NavToolsDijit .panIcon {
+	background-image: url(../images/nav_pan.png);
+	width: 16px;
+	height: 16px;
+}
+
+.gis_NavToolsDijit .deactivateIcon {
+	background-image: url(../images/nav_decline.png);
+	width: 16px;
+	height: 16px;
+}
+.gis_NavToolsDijit .formContainer {
+    /*border: 1px solid #bbb;*/
+    width: 100%;
+}
+.gi-2x
+{font-size: 20px;
+}
+.gi-3x{font-size: 30px;}
+.gi-4x{font-size: 40px;}
+.gi-5x{font-size: 50px;}

@@ -1,0 +1,22 @@
+<div class="${baseClass}">
+	
+		<div data-dojo-attach-point="btnScrollLeft" class="scrollButton hidden">
+			<button data-dojo-type="dijit.form.Button" data-dojo-props="showLabel:false,iconClass:'upIcon',baseClass:'${leftButtonClass}'" data-dojo-attach-event="onMouseOver:moveLeft,onMouseOut:stopMove">scroll left</button> <BR>
+		</div>
+		<div id="mask" data-dojo-attach-point="mask" class="scrollButton">
+			<ul id="toolList" data-dojo-attach-point="toolList">
+	           	<!--<li id="first">
+					<button data-dojo-type="dijit.form.Button" data-dojo-props="showLabel:false,iconClass:'extentIcon',baseClass:'${buttonClass}'" >toolbar1</button> 
+				</li>
+				<li id="second">
+					<button data-dojo-type="dijit.form.Button" data-dojo-props="showLabel:false,iconClass:'extentIcon',baseClass:'${buttonClass}'" >toolbar2</button>
+				</li>
+            	<li id="third">
+					<button data-dojo-type="dijit.form.Button" data-dojo-props="showLabel:false,iconClass:'extentIcon',baseClass:'${buttonClass}'" >toolbar3</button>
+				</li-->
+			</ul>
+		</div>
+		<div data-dojo-attach-point="btnScrollRight" class="scrollButton hidden">
+			<button data-dojo-type="dijit.form.Button" data-dojo-props="showLabel:false,iconClass:'downIcon',baseClass:'${rightButtonClass}'" data-dojo-attach-event="onMouseOver:moveRight,onMouseOut:stopMove">scroll right</button> 
+	 	</div>
+</div>

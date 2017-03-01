@@ -1,0 +1,210 @@
+.widget_LayerControl .toolbarButton {
+    -moz-user-select: none;
+    background-color:rgba(0,0,0,0.0);
+    /*border: 1px solid #666666;*/
+    -moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright:3px;
+	-moz-border-radius-bottomleft:3px;
+	-moz-border-radius-bottomright:3px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-top-right-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-webkit-border-bottom-right-radius:3px;
+	border-top-left-radius:3px;
+	border-top-right-radius:3px;
+	border-bottom-left-radius:3px;
+	border-bottom-right-radius:3px;
+    cursor: pointer;
+    padding: 0px; 
+    width: 29.5px;
+    height: 30px;
+}
+
+.widget_LayerControl .toolbarButtonIcon {
+	width: 35px;
+    height: 35px;
+    padding: 0px;
+    /*background-color:rgba(0,0,0,0.0);*/
+    border:none;
+
+}
+
+.widget_LayerControl .toolbarButtonIcon.blue, .widget_LayerControl .toolbarButtonIcon.black, .widget_LayerControl .toolbarButtonIcon.green {  
+    background: url(../images/search_dark.png) no-repeat center center; 
+
+    /*font-family: FontAwesome;
+    content:"\f002"; 
+    font-size:16pt;*/
+     /*background: url(../images/search_light.png) no-repeat center center;*/
+}
+.widget_LayerControl .toolbarButtonIcon.white {
+    background: url(../images/search_light.png) no-repeat center center;
+
+     /*background: url(../images/search_dark.png) no-repeat center center;*/ 
+}
+.widget_LayerControl .toolbarButton .dijitButtonNode {
+    border: none;
+    background-color: rgba(0,0,0,0.0);
+    padding: 0px;   
+}
+.widget_LayerControl .floatingPaneIcon.black:before, .widget_LayerControl .floatingPaneIcon.blue, .widget_LayerControl .floatingPaneIcon.green{
+  /*background-image: url(../images/search_light.png);*/
+  
+  font-family: FontAwesome;
+    content:"\f278"; 
+    font-size:10pt;
+    color:white;
+}
+
+.widget_LayerControl .floatingPaneIcon.white {
+  background-image: url(../images/search_dark.png);
+}
+.widget_LayerControl .hidden{
+	display:none;
+}
+
+.layerControlDijit .vectorLayerContainer {}
+
+.layerControlDijit .vectorLabelContainer {
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 4px;
+}
+
+.layerControlDijit .overlayLayerContainer {}
+
+.layerControlDijit .overlayLabelContainer {
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 4px;
+}
+
+.layerControlDijit .layerControl {
+    padding-bottom: 6px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.layerControlDijit .layerControlExpand {
+    border-bottom: solid 1px #DDD;
+}
+
+.layerControlDijit .layerControlTable {
+    width: 100%;
+}
+
+.layerControlDijit .layerControlTable tr {
+    vertical-align: middle;
+}
+
+.layerControlDijit .layerControlTable td {
+    padding: 0;
+}
+
+.layerControlDijit .layerControlTableExpand {
+    cursor: pointer;
+    width: 18px;
+    height: 15px;
+    line-height: 15px;
+}
+
+.layerControlDijit .layerControlTableCheck,
+.layerControlDijit .layerControlTableMenu {
+    cursor: pointer;
+    width: 19px;
+    height: 16px;
+    line-height: 16px;
+}
+
+.layerControlDijit .layerControlTableLabel {
+    font-size: 15px;
+    height: 16px;
+    line-height: 16px;
+    cursor: default;
+}
+
+.layerControlDijit .layerControlTableUpdate {
+    width: 21px;
+    height: 16px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.layerControlDijit .layerControlIndent {
+    padding-left: 22px;
+}
+
+.layerControlDijit .layerControlIcon {
+    font-size: 17px;
+}
+
+.layerControlDijit .layerControlUpdateIcon {
+    font-size: 12px;
+}
+
+.layerControlDijit .layerControlMenuIcon {
+    font-size: 15px;
+    color: #666;
+}
+
+.layerControlDijit .layerControlMenuIcon:hover {
+    color: #111;
+}
+
+.layerControlDijit .layerControlCheckIconOutScale {
+    color: #BBB;
+}
+
+/* not in use - retain for links */
+.layerControlDijit .layerControlClick {
+    cursor: pointer;
+    color: #1f78af;
+    text-decoration: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.layerControlDijit .layerControlClick:hover {
+    text-decoration: underline;
+}
+
+.layerControlDijit .layerControlLegendTable tr {
+    vertical-align: middle;
+}
+
+.layerControlDijit .layerControlLegendImage > img {
+    border: none;
+    padding: 0;
+}
+
+.layerControlDijit .layerControlLegendLabel {
+    padding: 0 0 0 4px;
+}
+
+/* temp esri/Legend overrides */
+.layerControlDijit .esriLegendService td {
+    padding: 0;
+}
+
+.layerControlDijit .esriLegendGroupLayer, .layerControlDijit .esriLegendLayerLabel {
+    padding: 0;
+}
+
+.layerControlDijit .esriLegendServiceLabel {
+    display: none;
+}
+
+.layerControlDijit .menuLink {
+    color: #369;
+    text-decoration: none;
+}
+
+.layerControlDijit .menuLink:hover {
+    color: #5196DB;
+    text-decoration: underline;
+    cursor: pointer;
+}
